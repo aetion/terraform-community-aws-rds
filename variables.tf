@@ -1,6 +1,6 @@
 variable "db_depends_on" {
   type        = any
-  default     = null                                                                                
+  default     = null
   description = "Hack to add a depends on a module"
 }
 
