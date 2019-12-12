@@ -1,3 +1,9 @@
+variable "db_depends_on" {
+  type        = any
+  default     = null
+  description = "Hack to add a depends on a module"
+}
+
 variable "identifier" {
   description = "The name of the RDS instance, if omitted, Terraform will assign a random, unique identifier"
   type        = string

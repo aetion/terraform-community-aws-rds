@@ -108,7 +108,8 @@ resource "aws_db_instance" "this" {
 }
 
 resource "aws_db_instance" "this_mssql" {
-  count = var.create && local.is_mssql ? 1 : 0
+  count      = var.create && local.is_mssql ? 1 : 0
+  depends_on = [var.db_depends_on]
 
   identifier = var.identifier
 

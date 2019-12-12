@@ -1,3 +1,9 @@
+variable "db_depends_on" {
+  type        = any
+  default     = null
+  description = "Hack to add a depends on a module"
+}
+
 variable "create" {
   description = "Whether to create this resource or not?"
   type        = bool
