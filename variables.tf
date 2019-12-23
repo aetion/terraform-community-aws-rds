@@ -348,3 +348,9 @@ variable "max_allocated_storage" {
   type        = number
   default     = 0
 }
+
+
+variable subnet_group_name_prefix {
+  description = "Creates a unique name beginning with the specified prefix"
+  type        = string
+}

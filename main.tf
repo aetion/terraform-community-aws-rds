@@ -14,7 +14,7 @@ module "db_subnet_group" {
 
   create      = local.enable_create_db_subnet_group
   identifier  = var.identifier
-  name_prefix = "${var.identifier}-"
+  name_prefix = var.subnet_group_name_prefix
   subnet_ids  = var.subnet_ids
 
   tags = var.tags
@@ -114,4 +114,3 @@ module "db_instance" {
 
   tags = var.tags
 }
-
