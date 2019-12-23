@@ -4,8 +4,8 @@ variable "create" {
   default     = true
 }
 
-variable "name_prefix" {
-  description = "Creates a unique name beginning with the specified prefix"
+variable "subnet_group_name" {
+  description = "(Optional, Forces new resource) The name of the DB subnet group. If omitted, Terraform will assign a random, unique name."
   type        = string
 }
 
@@ -25,4 +25,3 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
-

@@ -12,10 +12,10 @@ locals {
 module "db_subnet_group" {
   source = "./modules/db_subnet_group"
 
-  create      = local.enable_create_db_subnet_group
-  identifier  = var.identifier
-  name_prefix = var.subnet_group_name_prefix
-  subnet_ids  = var.subnet_ids
+  create            = local.enable_create_db_subnet_group
+  identifier        = var.identifier
+  subnet_group_name = var.subnet_group_name
+  subnet_ids        = var.subnet_ids
 
   tags = var.tags
 }

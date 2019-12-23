@@ -349,8 +349,7 @@ variable "max_allocated_storage" {
   default     = 0
 }
 
-
-variable subnet_group_name_prefix {
-  description = "Creates a unique name beginning with the specified prefix"
+variable subnet_group_name {
+  description = "(Optional, Forces new resource) The name of the DB subnet group. If omitted, Terraform will assign a random, unique name."
   type        = string
 }
