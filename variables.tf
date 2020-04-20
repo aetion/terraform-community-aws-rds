@@ -185,7 +185,7 @@ variable "allow_major_version_upgrade" {
 variable "auto_minor_version_upgrade" {
   description = "Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "apply_immediately" {
